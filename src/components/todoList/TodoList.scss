@@ -109,6 +109,9 @@
         cursor: pointer;
 
         svg {
+            min-width: 20px;
+            width: 20px;
+            height: 20px;
             fill: $blue;
             transition: fill ease 0.3s;
         }
