@@ -5,6 +5,13 @@ export const updateTaskText = (text) => ({
     },
 });
 
+export const initApp = (tasks) => ({
+    type: 'INIT_APP',
+    payload: {
+        tasks,
+    },
+});
+
 export const addTask = (task) => ({
     type: 'ADD_TASK',
     payload: {
