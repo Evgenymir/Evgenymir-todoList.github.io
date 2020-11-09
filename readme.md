@@ -1,18 +1,23 @@
-## Для работы надо установить
-* nodejs
-* npm
-* webpack
+## Проект TODO LIST
 
-## Устанавливаем зависимости
-* npm install
+[Demo проекта](https://evgenymir.github.io/todoList/public/index.html)
 
-## Старт работы
-* npm run dev
+## Используемые технологии
+```
+ React / Redux
+ HTML5 / CSS3 / SCSS / BEM / Responsive Layout
+ JavaScript
+```
 
-Поднимается локальный сервер - `localhost:3001`
+## Дополнительные библиотеки
+```
+ PropTypes
+```
 
-Страницы доступны - `localhost:3001/`
-
-## Структура папок
-Все рабочие файлы лежат в папке `src`
-Картинки, шрифты лежат в папке `public`
+## JSON файлы
+Используются:
+  [InitialData](https://evgenymir.github.io/irline-react/build/AppData.json)
+  [AboutData](https://evgenymir.github.io/irline-react/build/AboutData.json)
+  [ProductsData](https://evgenymir.github.io/irline-react/build/ProductsData.json)
+  [ProductCardsData](https://evgenymir.github.io/irline-react/build/ProductCardsData.json)
+  [ServicesData](https://evgenymir.github.io/irline-react/build/ServicesData.json)
