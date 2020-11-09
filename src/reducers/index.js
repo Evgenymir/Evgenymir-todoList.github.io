@@ -66,9 +66,34 @@ const tasks = (state = { byId: {}, allIds: [] }, action) => {
     }
 };
 
+const filter = (state = {}, action) => {
+    switch (action.type) {
+        case 'INIT_APP': {
+            return {
+                active: 'all',
+            };
+        }
+        case 'ADD_TASK': {
+            return {
+                active: 'all',
+            };
+        }
+        case 'FILTER_TASKS': {
+            return {
+                active: action.payload,
+            };
+        }
+
+        default: {
+            return state;
+        }
+    }
+};
+
 const rootReducers = combineReducers({
     taskText,
     tasks,
+    filter,
 });
 
 export default rootReducers;

@@ -1,0 +1,29 @@
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/variables';
+
+.filter-buttons {
+    width: 100%;
+    max-width: 630px;
+    margin: 15px auto;
+    padding: 0 15px;
+
+    &__button {
+        font-size: 14px;
+        line-height: 18px;
+        color: $blue;
+        cursor: pointer;
+        margin-right: 10px;
+        border: 0;
+        background-color: transparent;
+        letter-spacing: 1px;
+
+        &.active {
+            font-weight: 700;
+            color: $black;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}

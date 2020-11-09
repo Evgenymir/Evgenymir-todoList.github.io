@@ -32,3 +32,8 @@ export const removeTask = (id) => ({
         id,
     },
 });
+
+export const filterTask = (status) => ({
+    type: 'FILTER_TASKS',
+    payload: status,
+});

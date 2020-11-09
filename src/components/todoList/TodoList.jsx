@@ -7,7 +7,10 @@ import { updateTask, removeTask } from '../../actions';
 
 const mapStateToProps = (state) => {
     const { tasks: { byId, allIds } } = state;
-    const tasks = allIds.map((id) => byId[id]);
+    const { filter: { active } } = state;
+
+    const filteredTasks = allIds.filter((id) => active === 'all' || active === byId[id].state);
+    const tasks = filteredTasks.map((id) => byId[id]);
 
     return {
         tasks,

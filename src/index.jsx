@@ -5,11 +5,12 @@ import { createStore } from 'redux';
 import rootReducers from './reducers';
 import App from './components/app/App.jsx';
 
+/* eslint-disable no-underscore-dangle */
 const store = createStore(
     rootReducers,
-    // eslint-disable-next-line no-underscore-dangle
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f,
 );
+/* eslint-enable */
 
 ReactDOM.render(
     <Provider store={store}>
